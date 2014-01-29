@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Model Prototyping an Eco ATM</title>
+    <title>Visualizing Burtin's Antibiotic Dataset</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Aniket Handa">
@@ -59,10 +59,10 @@
         <nav id="menu">
         	<ul id="menu-nav-blog">
                 
-                  <li >
+                  <li class="active">
                     <a href="http://blog.atneik.com/category/.html"></a>
                   </li>
-                  <li class="active">
+                  <li >
                     <a href="http://blog.atneik.com/category/studio.html">Studio</a>
                   </li>
               <!--
@@ -90,64 +90,49 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to Model Prototyping an Eco ATM">
-                                        Model Prototyping an Eco ATM
+                                        title="Permalink to Visualizing Burtin's Antibiotic Dataset">
+                                        Visualizing Burtin's Antibiotic Dataset
                                 </a>
                         </h1>
                 </header>
                 <div class="entry-content">
                 
-                <h2>Process</h2>
-<p>After paper prototyping last week, it was time for 3D. We were suppose to design and build a prototype of an EcoATM within 2 hours. For those who wonder what that is - its simply a mobile phone recycling box which give you some cash (not much) for your old phone. There were some basic functional requirements that need to be covered:</p>
+                <p>This Quarter I'm taking CSE512: Data Visualization class by <a href="http://homes.cs.washington.edu/~jheer/">Jeff Heer</a>. The <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a1.html">first assignment</a> required us to design a visualization for the Burtin's Antibiotic dataset. This is what I came up with: </p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg" /></p>
+<p><a href="https://dl.dropboxusercontent.com/u/23289062/siteImages/DataViz/a1-aniket.svg">SVG</a></p>
+<h2>Audience</h2>
+<p>The audience of the visualization are Doctors and Lab practitioners who need to know the Minimum Inhibitory Concentration (MIC) of the antibiotic during (not after) the process of determining the bacteria in hand.</p>
+<h2>Rationale</h2>
 <ul>
-<li>A touch screen</li>
-<li>A receipt and QR code printer</li>
-<li>Cash Dispenser</li>
-<li>A <em>safe</em> compartment wherein user can deposit the phone</li>
-<li>An ID Scanner</li>
-<li>Visual Scanner for detecting device condition, etc.</li>
+<li>I briefly went through the procedure involved in diagnosis of bacteria. First step is Gram staining the bacteria. It’s quite fast and cheap to get Gram results as positive or negative. So, it will be beneficial if the data is visualized in two separate graphics according to Gram Stain as one wouldn’t need to go though all 16 bacteria. Moreover it tells a story, which I noticed (and would like to tell) while I was performing transformation on the data to find any patterns. It intentionally and correctly shows that Neomycin is an effective antibiotic for Gram-negative bacteria and Penicillin (in most cases) or Neomycin (for other cases) can be good choice for Gram-positive bacteria. </li>
+<li>The data is arranged from lower concentration needed to higher concentration needed. As with lower MIC I wanted to represent more powerfulness or effectiveness of the antibiotic, it made sense to arrange it in that order. For example, the graphic shows Neomycin as a powerful antibiotic for Gram-negative bacteria, showing ‘capturing’ all the space and inhibiting the bacterial growth. To show the ‘capturing’ I used spider chart instead of something else. The color of the text showing Gram strain is in purple for positive and in pink/red for negative as the color of bacteria after gram staining. This is can help is quick recognition.</li>
+<li>As the MIC data is not linear. I applied the following formula to transform the data so that it can tell the above mentioned stories and can be fitted into the space. </li>
 </ul>
-<p>Some non-functional requirements that we considered:</p>
-<ul>
-<li>Accessibility</li>
-<li>Gives sense of Security and Transparency </li>
-<li>Ergonomics</li>
-</ul>
-<p>Before heading to the development board, we scratched our head for improving the current state of art. We identified some of the problems which we could address, such as:</p>
-<ul>
-<li>The screen placement wasn't for everyone. </li>
-<li>The phone placing compartment was opaque. It gave a feeling of insecurity.</li>
-<li>The overall flow and processes was way too complex.</li>
-</ul>
-<p>After discussing these issues we individually sketched some ideas. We spend a considerable time sketching, as compared to others, though in this particular exercise we suppose to think with hands. But, it was fruitful, we came with an ambitious and unique idea for implementing the system.</p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/11.JPG" /></p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/13.JPG" /></p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/25.JPG" /></p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/18.JPG" /></p>
-<p>And finally this is what we build..</p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/19.JPG" /></p>
-<p>The screen was the center of the design. We conceptualized it to have a camera to recognize faces and adjust according to there height. For this we made it in such a way it had two degrees of freedom, it rotated on the horizontal axis and went up and down. The user could place the phone on the screen when it was completely horizontal. The compartment was replaced by covering up the screen with a transparent cover after the phone was placed. The system can be better understood in action than by reading words (one of the reason to prototype). </p>
-<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W2/22.JPG" /></p>
-<p>We actually used Wizard of Oz technique to give the experience of using it. Here is a fun video..</p>
-<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-<iframe width="100%" height="100%" src="//www.youtube.com/embed/UtQZuLq0X5k?rel=0&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
+<div class="highlight"><pre><span class="n">Y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">+</span><span class="n">log</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
 
-<p><br /></p>
-<h2>What I learned?</h2>
+<span class="n">It</span> <span class="n">maps</span> <span class="n">the</span> <span class="n">MIC</span> <span class="n">values</span> <span class="n">as</span><span class="o">:</span>
+
+<span class="mf">0.001</span>   <span class="n">to</span>  <span class="mi">7</span>
+<span class="mf">0.01</span>    <span class="n">to</span>  <span class="mi">6</span>
+<span class="mf">0.1</span>     <span class="n">to</span>  <span class="mi">5</span>
+<span class="mi">1</span>       <span class="n">to</span>  <span class="mi">4</span>
+<span class="mi">10</span>      <span class="n">to</span>  <span class="mi">3</span>
+<span class="mi">100</span>     <span class="n">to</span>  <span class="mi">2</span>
+<span class="mi">1000</span>    <span class="n">to</span>  <span class="mi">1</span>
+
+<span class="n">The</span> <span class="n">log</span><span class="p">(</span><span class="n">base</span> <span class="mi">10</span><span class="p">)</span> <span class="n">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">linearize</span> <span class="n">the</span> <span class="n">data</span><span class="p">.</span> <span class="o">-</span><span class="mi">4</span> <span class="n">helps</span> <span class="n">in</span> <span class="n">having</span> <span class="n">all</span> <span class="n">the</span> <span class="n">data</span> <span class="n">on</span> <span class="n">one</span> <span class="n">side</span> <span class="n">of</span> <span class="n">the</span> <span class="n">axis</span><span class="p">.</span> <span class="n">Then</span> <span class="n">the</span> <span class="o">-</span><span class="mi">1</span> <span class="n">over</span> <span class="n">whole</span> <span class="n">takes</span> <span class="n">it</span> <span class="n">to</span> <span class="n">the</span> <span class="n">positive</span> <span class="n">domain</span><span class="p">.</span> <span class="n">The</span> <span class="n">mapping</span> <span class="n">also</span> <span class="n">made</span> <span class="n">it</span> <span class="n">easier</span> <span class="k">for</span> <span class="n">the</span> <span class="n">graphic</span> <span class="n">toolkit</span> <span class="n">to</span> <span class="n">represent</span> <span class="n">using</span> <span class="n">levels</span> <span class="mi">1</span> <span class="n">to</span> <span class="mf">7.</span>
+</pre></div>
+
+
 <ul>
-<li>Modeling promotes thinking on-the-fly. You're ideating about possible solutions while you're building stuff.</li>
-<li>Brings out possible issues with the design.</li>
-<li>Makes you feel &amp; experience the product without much investment (two hours?).</li>
-<li>It's a great tool to better communicate ones idea.</li>
-<li>It's fun!</li>
+<li>I also tried using external database for shape of the bacteria to get some patterns, but couldn’t in the specified time constrain. As, Bacteria can have a Cocci or Bacilli or other shapes independent of the gram. I think using the shape data (as this is usually the next step followed in Labs after Gram staining) can be the next step in improving this visualization, and this might give it a tree-like structure that can be easy to follow. Also, due to strongly separating into two graphics the visualization makes it difficult to perceive any relation between two gram staining (if any). </li>
 </ul>
                 </div><!-- /.entry-content -->
                 <div class="comments">
                 <h2>Comments !</h2>
                         <div id="disqus_thread"></div>
                         <script type="text/javascript">
-                           var disqus_identifier = "model-prototyping-eco-atm.html";
+                           var disqus_identifier = "visualizing-burtin-antibiotic-dataset.html";
                            (function() {
                                 var dsq = document.createElement('script');
                                 dsq.type = 'text/javascript'; dsq.async = true;
