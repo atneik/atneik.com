@@ -68,7 +68,7 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_setAccount', 'UA-30930227-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -153,13 +153,16 @@
 												  var url = $(this).find('url').text();
 												  var classname = $(this).find('classname').text();
 												  var imagesrc = $(this).find('imagesrc').text();
+												  var imagesrc2 = $(this).find('imagesrc2').text();
 												  var data = $(this).find('data').text();
 												  
 												  
 												  if(id == requestId){
 												  $('<h2> </h2>').html(title).appendTo('#project');
+
 												  
 												  $('<p> </p>').html(data).appendTo('#project');
+												  $('<img style="display:block; margin-left: auto; margin-right: auto;" src="' + imagesrc2 + '" alt=""> </a>').appendTo('#project');
 												  flag = false;
 												  }
 											});
