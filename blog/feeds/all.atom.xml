@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Aniket Handa</title><link href="http://blog.atneik.com/" rel="alternate"></link><link href="http://blog.atneik.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.atneik.com/</id><updated>2014-01-26T10:20:00-08:00</updated><entry><title>Exploratory Data Analysis: Flight</title><link href="http://blog.atneik.com/exploratory-analysis-of-flight-dataset-seattle.html" rel="alternate"></link><updated>2014-01-26T10:20:00-08:00</updated><author><name>Aniket Handa</name></author><id>tag:blog.atneik.com,2014-01-26:exploratory-analysis-of-flight-dataset-seattle.html</id><summary type="html">&lt;p&gt;The &lt;a href="http://courses.cs.washington.edu/courses/cse512/14wi/a2.html"&gt;second assignment&lt;/a&gt; at CSE512 required us to explore huge datasets and find answers to interesting questions.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Aniket Handa</title><link href="http://blog.atneik.com/" rel="alternate"></link><link href="http://blog.atneik.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.atneik.com/</id><updated>2014-02-05T21:15:00-08:00</updated><entry><title>Video Prototyping: Medical App</title><link href="http://blog.atneik.com/video-prototyping-medical-app.html" rel="alternate"></link><updated>2014-02-05T21:15:00-08:00</updated><author><name>Aniket Handa</name></author><id>tag:blog.atneik.com,2014-02-05:video-prototyping-medical-app.html</id><summary type="html">&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;For the third assignment we were free to choose any one of our previous project or just about anything in the market and create a video prototype of the product or service. The concept, the storyline, the impact, the message was all for the student to decide. I used one of my project which I did in previous quarter. It was about an mobile App which helps you take medical decisions around Doctors, Treatments and facilities. &lt;/p&gt;
+&lt;h2&gt;Prototype&lt;/h2&gt;
+&lt;p&gt;I discovered that I just can't do straight story lines. Something that starts simply with a problem, then shows the perfect solution was beyond my implementation. I just had to create some twisty plot, which had ups and downs. It gets more difficult because of time constrains on the video. No wonder I messed up a bit, but it was my first time and I learned a lot. After getting a vague idea in mind, I started storyboarding. I wrote down scenes, their motive and the voice over, if any. The video can be  divided into three parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first part tried to create lonely and melancholy feelings in the viewer. I used slow shots. Used some effects to so that time appears not to move. &lt;/li&gt;
+&lt;li&gt;Bridge: Its role was to connect the first part and the second, otherwise it won't make much sense.&lt;/li&gt;
+&lt;li&gt;The last part, this section finally explains the features offered by the App and how can it provide value to a medical care needer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the video:&lt;/p&gt;
+&lt;div class="flex-video widescreen" style="margin: 0 auto;text-align:center;"&gt;
+&lt;iframe width="100%" height="100%" src="//www.youtube.com/embed/IRaRQ5Ri_Rs?rel=0&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;After critiques I could clearly see many problems with the video.
+&lt;em&gt; The video wasn't focusing entirely on the product usage. The screenshots were small
+&lt;/em&gt; The bridge failed for most of the audience and the purpose of first part became debatable.
+* The voice over (which is always pretty tough to get good quality) could be definitely done better.&lt;/p&gt;
+&lt;p&gt;Though the video was appreciated for scenematic shots, it didn't meet the desired purpose entirely.&lt;/p&gt;</summary><category term="prototyping"></category></entry><entry><title>Exploratory Data Analysis: Flight</title><link href="http://blog.atneik.com/exploratory-analysis-of-flight-dataset-seattle.html" rel="alternate"></link><updated>2014-01-26T10:20:00-08:00</updated><author><name>Aniket Handa</name></author><id>tag:blog.atneik.com,2014-01-26:exploratory-analysis-of-flight-dataset-seattle.html</id><summary type="html">&lt;p&gt;The &lt;a href="http://courses.cs.washington.edu/courses/cse512/14wi/a2.html"&gt;second assignment&lt;/a&gt; at CSE512 required us to explore huge datasets and find answers to interesting questions.&lt;/p&gt;
 &lt;h2&gt;Exploratory Journey &amp;amp; Analysis&lt;/h2&gt;
 &lt;p&gt;I wanted to find that one question to which the answer (interpretation from visualization) is contradictory to common belief or at least the visualization should be rich and useful. So, I started asking questions with a hope to find something that results into unexpected. I first explored the flight dataset, then went to movie database and then again came back to flight data. Here I only show the exploration of flight dataset just to make it less complicated.&lt;/p&gt;
 &lt;h4&gt;Flight Dataset&lt;/h4&gt;
@@ -129,6 +149,12 @@
 &lt;p&gt;&lt;img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W3/22.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;And the whole Family together.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W3/23.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The 60-sec video of user testing:&lt;/p&gt;
+&lt;div class="flex-video widescreen" style="margin: 0 auto;text-align:center;"&gt;
+&lt;iframe width="100%" height="100%" src="//www.youtube.com/embed/87zVHrKSzU0?rel=0&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2&gt;Analysis&lt;/h2&gt;
 &lt;h4&gt;Improvements&lt;/h4&gt;
 &lt;p&gt;The prototypes were evolved as the problems were discovered, but still keeping in mind the diversity of design. For example, the first prototype was too large for most hands therefore the size of the handle was reduced. The second design concentrated on users who press the main button by thumb. Then upon discovering that there are users who prefer to use fingers instead of thumb, the design was evolved. While designing all the prototypes constrains and principles listed in above sections where kept in mind and also discovered. &lt;/p&gt;
