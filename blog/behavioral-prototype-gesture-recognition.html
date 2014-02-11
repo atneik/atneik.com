@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Behavioral Prototype: Gesture recognition platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Aniket Handa">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://blog.atneik.com/theme/css/bootstrap.min.css" type="text/css" />
+    
+    <link href="http://blog.atneik.com/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://blog.atneik.com/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="http://blog.atneik.com/theme/css/pygments.css" rel="stylesheet">
+    
+    <!--  Style -->
+<link href="http://blog.atneik.com/theme/css/main.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="http://blog.atneik.com/theme/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="http://blog.atneik.com/theme/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="http://blog.atneik.com/theme/css/shortcodes.css" rel="stylesheet">
+
+<!-- Google Font -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600,600italic,200,200italic,300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://blog.atneik.com/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://blog.atneik.com/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://blog.atneik.com/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://blog.atneik.com/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://blog.atneik.com/" type="application/atom+xml" rel="alternate" title="Aniket Handa ATOM Feed" />
+
+  </head>
+
+  <body>
+
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a  href="http://blog.atneik.com/index.html" title="Aniket Handa">Aniket Handa</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav-blog">
+                
+                  <li >
+                    <a href="http://blog.atneik.com/category/.html"></a>
+                  </li>
+                  <li class="active">
+                    <a href="http://blog.atneik.com/category/studio.html">Studio</a>
+                  </li>
+              <!--
+              <li><a href="http://blog.atneik.com/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                
+                    <li><a href="http://blog.atneik.com/tags.html"><i class="icon-tag icon-large"></i>Tags</a></li>
+                -->  
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page2">
+	<div class="container">
+        
+        <div class="row">   
+            <div class="span12">
+            	<div id="article">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Behavioral Prototype: Gesture recognition platform">
+                                        Behavioral Prototype: Gesture recognition platform
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                
+                <h2>Design Challenge</h2>
+<p>The challenge for this assignment was to build and test a behavioral prototype for a gestural user interface for a TV system. They system had to allow for basic video function controls (play, pause, stop, fast forward, rewind, etc.) Our team chose to pursue a 3D gesture system. The goal of our prototype and evaluation was to explore the following design research and usability questions:</p>
+<ul>
+<li>How can a user effectively control video playback using hand gestures?</li>
+<li>What are the most intuitive gestures for this application?</li>
+<li>What level of accuracy is required in this gesture recognition technology?</li>
+</ul>
+<h2>Prototype</h2>
+<p>We began by discussing how to set up our prototype to allow for quick iteration and modification. Two key elements to our prototype was </p>
+<ol>
+<li>
+<p>figuring out how to manipulate the video content to simulate the controls carried out by a user’s 3D gestures outside of the user’s sight and </p>
+</li>
+<li>
+<p>how to provide feedback to the user while carrying out a specific gestures. </p>
+</li>
+</ol>
+<p>Initially we decided to use Google Chrome Cast to wirelessly control the television through a laptop. However, we soon realized that running Chrome Cast using a Mac had some glitches and delays that would negatively impact our test. We opted instead to use a mini display port to VGA adapter to connect the laptop directly into the television set. This allowed us to control the video in real time without any perceived delay from the user.
+To simulate the feedback, we used a laser pointer aimed at the television that mimicked the user’s gesture. We also used this to indicate to the user when the gestures were outside of “the system’s” visible range. 
+Next, we individually came up with a variety of gestures that we tested on ourselves and with each other. We noticed some common themes in the gestures we were developing and narrowed them down to three main sets, which included an open palm style, a fist style, and a thumb style of interaction. </p>
+<h4>Gesture Sets – Palm, Fist, and Thumb</h4>
+<p><img alt="fist" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W4/Fist%20Instructions-01.png" /></p>
+<p><img alt="palm" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W4/Palm%20Instructions-01.png" /></p>
+<p><img alt="thumb" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W4/Thumb%20Instructions-01.png" /></p>
+<p>With these three varied sets of gestures we wanted to understand how users would perceive the required actions, how easy they would be to conduct, how intuitive each set was, how easy it would be to remember each set of gestures, and whether or not a user would prefer one set to the others. </p>
+<p>Next, we decided on roles. We needed a Wizard/operator, a moderator, and a laser feedback controller. We also needed to recruit participants and find a location to conduct the test in the context of a home living room, where a television would likely be set up “in the wild”.</p>
+<p><img alt="image" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W4/DSC_0039.JPG" /> </p>
+<p>Images captured while setting up the behavior prototype. </p>
+<p>In our final set up used for testing users in context, we had the moderator and user sitting on a sofa facing the television. The operator sat facing the user able to clearly see each of the user’s gestures, but out of the user’s direct attention. The laser feedback controller also stood out of the user’s attention facing the television in order to be able to recreate the user’s gestures while pointing the laser into the television. A camera set on a tripod was set up behind the user to simultaneously capture the user’s gestures and television response. </p>
+<p>The user was given three sets of printed instructions describing each of the three gesture sets, which could be referenced at anytime during the test. A Kinect device was added to the television set up as a prop to represent the way in which the system would capture the user’s gesture input. </p>
+<p><img alt="setup" src="https://dl.dropboxusercontent.com/u/23289062/siteImages/Studio/Q2/W4/Behavioral%20Prototype%20Set%20Up.png" /></p>
+<p>For the evaluation itself, we put together a script describing what we were testing. We asked the user to review each set of instructions before performing the following predefined tasks while watching an episode of Sherlock:</p>
+<ul>
+<li>Start the video</li>
+<li>Fast forward to wedding scene and play the video from there</li>
+<li>Pause the video</li>
+<li>Rewind to the scene where Sherlock &amp; Aunt are sharing tea</li>
+<li>If you only wanted to see the last scene in the show, how would you get there?</li>
+<li>Play again</li>
+</ul>
+<p>We also encouraged the user to use a think aloud protocol, so that we could capture his thoughts during the test.</p>
+<p>After testing all three gesture sets, we surveyed the user to gather feedback on how easy it was to remember the gestures, gesture preferences, whether or not there were gestures that were particularly awkward or difficult to conduct, our feedback mechanism, and any abnormal or unexpected behaviors.  We ended with an open feedback session to allow the user to share any additional thoughts. </p>
+<p>Here is the video of user testing:</p>
+<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+<iframe width="100%" height="100%" src="//www.youtube.com/embed/tMd0KVkJJ6c?rel=0&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p><br /></p>
+<h2>Analysis</h2>
+<h4>What worked well</h4>
+<p>Testing in a real living room was helpful for understanding the context in which a user would be using the product. This helped us realize quickly that gestures would most likely be conducted while users were sitting; so recommended gestures needed to take this into account. </p>
+<p>Regarding gesture types, the user found the palm style and fist style gesture sets equality intuitive, but found the fist style gestures less easy to remember. The user had a preference for “the palm style…for sure because it’s the most simple...and the instructions were super simple.” </p>
+<p>The user also noticed and appreciated the feedback of the green laser light because it was a “nice visual to know that action is registering on the screen.” He also stated that it was “helpful for tracking his motion.”</p>
+<h4>What needed improvement</h4>
+<p>Although, we felt that the thumb gestures could easily be recognized by they system because of the distinct directional cue provided by the thumb pointers created by the shape of the hand, it was not as well received by the user as the other gesture sets. The user found the rewind gesture for the thumb style set to be particularly awkward when using just the right hand, and introduced the idea of using the left hand for the same gesture. </p>
+<p>The user felt that when performing fast forward and rewind using the fist style gestures, it was difficult to know how far to stretch his arm or how sensitive the system would be. </p>
+<p>Although, the palm style set of gestures were preferred by the user, we noticed while analyzing the video that when the user repeated the fast forward gesture quickly, the motion could easy be misinterpreted for fast forward, rewind, fast forward, rewind, fast forward. Although the wizard knew the user’s intention and could operate the video correctly, it could be difficult for “the system” to distinguish the direction intent of the user. </p>
+<p>We also realized through the testing that one of the main challenges, for all parties – user, Wizard, and laser operator alike, was understanding when the user’s actions were out of range. Our team discussed the possibility of providing some sort of calibration to find a users midpoint and mapping the video content timeline directly to the distance between the users hands when performing the most extreme fast forward and rewind gestures to make this experience more accurate.</p>
+<p>Since our Wizard of Oz prototype did not account for other possible moving objects in the space, we felt it would be important to consider how the system would deal with “noise” from other moving objects during viewing. </p>
+<h4>Conclusion</h4>
+<p>Overall, we felt that our behavior prototype was successful in providing a “quick and dirty” way to test assumptions about the 3D gesture interactions we developed. We learned a great deal not only about the user’s gesture preferences, but also about the level of accuracy that the gesture recognition technology would need to account for.  </p>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "behavioral-prototype-gesture-recognition.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://atneik.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+</section>
+                     	
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<nav>
+                <ul>
+                
+                </ul>
+            </nav>
+            
+		<div class="row-fluid credits">
+			<div class="span12">
+				&copy;2014 <a href="http://www.atneik.com/" title="Atneik">Atneik. </a>
+				<br>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+<foot-filler>
+</foot-filler>
+<!-- End Footer -->
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'atneik';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Modernizr -->
+<script src="http://blog.atneik.com/theme/js/modernizr.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+
+    <script src="http://blog.atneik.com/theme/js/bootstrap.min.js"></script>
+    <!-- Js -->
+<script src="http://blog.atneik.com/theme/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="http://blog.atneik.com/theme/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="http://blog.atneik.com/theme/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="http://blog.atneik.com/theme/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="http://blog.atneik.com/theme/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="http://blog.atneik.com/theme/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+  </body>
+</html>
